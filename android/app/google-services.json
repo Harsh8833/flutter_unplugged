@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145402163377",
+    "project_id": "unplugged-6fd46",
+    "storage_bucket": "unplugged-6fd46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145402163377:android:b620be0bbf296eaf283290",
+        "android_client_info": {
+          "package_name": "com.example.unplugged_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhNmt1l69L3JYOHCuuShK3PQnlrrSmors"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
