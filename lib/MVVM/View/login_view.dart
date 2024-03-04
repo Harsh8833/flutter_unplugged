@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'DSW.dart';
+import 'DSW/dsw_dashboard_view.dart';
 
-class login_view extends StatefulWidget {
-  const login_view({Key? key}) : super(key: key);
+class LoginView extends StatefulWidget {
+  const LoginView({Key? key}) : super(key: key);
 
   @override
-  State<login_view> createState() => _login_viewState();
+  State<LoginView> createState() => _LoginViewState();
 }
 
-class _login_viewState extends State<login_view> {
+class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,8 @@ class _login_viewState extends State<login_view> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => dsw_view()),
+                      MaterialPageRoute(
+                          builder: (context) => DswDashBoardView()),
                     );
                   },
                   child: Text("Login"),
