@@ -1,32 +1,14 @@
 import 'package:flutter/material.dart';
+import 'DSW.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class login_view extends StatefulWidget {
+  const login_view({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<login_view> createState() => _login_viewState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _login_viewState extends State<login_view> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +30,12 @@ class _MyHomePageState extends State<MyHomePage> {
               Container(
                 margin: EdgeInsets.all(10),
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => dsw_view()),
+                    );
+                  },
                   child: Text("Login"),
                 ),
               ),
